@@ -1,0 +1,149 @@
+@font-face {
+    font-family: bit;
+    src: url(../assets/fonts/8-BIT.TTF);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: bit;
+    text-decoration: none;
+    color: black;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-image: url("https://i.redd.it/rj4rhv0a3ifb1.jpg");
+}
+
+.all_container{
+    height: 80%;
+    width: 100%;
+    display: flex;
+}
+
+#contenerod_aside{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+aside{
+    float: left;
+    margin-left: 10px;
+    background-color: rgba(255, 255, 255, .5);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    border: solid 2px;
+    border-color: white;
+    height: 50vh;
+}
+
+aside ul li{
+    margin-bottom: 30px;
+}
+
+#contImg{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+#contenedor_Img{
+    height: 60vh;
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+}
+
+#contenedor_Img img{
+    height: 100%;
+}
+
+#cont_text{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#espacio_text_perfil{
+    display: none;
+    height: auto;
+    width: auto;
+    background-color: rgba(255, 255, 255, .5);
+    border: solid, 1px;
+    border-radius: 5px;
+    border-color: white;
+}
+
+#espacio_text_pryectos{
+    display: none;
+    height: auto;
+    width: auto;
+    background-color: rgba(255, 255, 255, .5);
+    border: solid, 1px;
+    border-radius: 5px;
+    border-color: white;
+}
+
+#espacio_text_habilidades{
+    display: none;
+    height: auto;
+    width: auto;
+    background-color: rgba(255, 255, 255, .5);
+    border: solid, 1px;
+    border-radius: 5px;
+    border-color: white;
+}
+
+#espacio_text_contacto{
+    display: none;
+    height: auto;
+    width: auto;
+    background-color: rgba(255, 255, 255, .5);
+    border: solid, 1px;
+    border-radius: 5px;
+    border-color: white;
+}
+
+#volver{
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+dialog {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid white;
+    padding: 20px;
+    border-radius: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+dialog ul div{ 
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+}
+
+dialog ul div li{
+    margin-left: 10px;
+}

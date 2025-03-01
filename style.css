@@ -1,0 +1,43 @@
+@font-face {
+    font-family: bit;
+    src: url(./assets/fonts/8-BIT.TTF);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: bit;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+    background-image: url("./assets/img/principal.webp");
+    background-size: 100% 100%;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+h1{
+    margin-top: 100px;
+}
+
+div{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+button{
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
