@@ -1,11 +1,16 @@
 let perfil = document.getElementById("perfil")
 let proyectos = document.getElementById("proyectos")
+let experiencia = document.getElementById("experiencia")
 let habilidades = document.getElementById("habilidades")
 let contacto = document.getElementById("contacto")
 let imagen = document.getElementById("img")
+// btn entorno 
 let btnVolver = document.getElementById("volver")
 let btnCerrar = document.getElementById("btn_cerrar")
+let cerrraEx = document.getElementById("cerrar_ex")
+// modales
 let modal = document.getElementById("modal_contacto");
+let modalExperiencia = document.getElementById("modal_experiencia")
 /// espacios de texto
 let contText = document.getElementById("espacio_text_perfil")
 let text_habilidades = document.getElementById("espacio_text_habilidades")
@@ -83,6 +88,10 @@ habilidades.addEventListener("click", ()=>{
     
 })
 
+experiencia.addEventListener("click", ()=>{
+    modalExperiencia.showModal();
+})
+
 contacto.addEventListener("click", ()=>{
     modal.showModal();
 })
@@ -93,4 +102,8 @@ btnVolver.addEventListener("click", () =>{
 
 btnCerrar.addEventListener("click", () =>{
     modal.close();
+})
+
+cerrraEx.addEventListener("click", () =>{
+    modalExperiencia.close();
 })

@@ -17,9 +17,12 @@ html{
 }
 
 body{
-    height: 100%;
-    width: 100%;
-    background-image: url("https://i.redd.it/rj4rhv0a3ifb1.jpg");
+    height: 100vh; 
+    width: 100vw;
+    background-image: url("/assets/img/habitacion.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .all_container{
@@ -125,7 +128,7 @@ aside ul li{
     text-align: center;
 }
 
-dialog {
+#modal_contacto {
     background-color: rgba(255, 255, 255, 0.5);
     border: 2px solid white;
     padding: 20px;
@@ -136,7 +139,7 @@ dialog {
     transform: translate(-50%, -50%);
 }
 
-dialog ul div{ 
+#modal_contacto ul div{ 
     margin-top: 20px;
     display: flex;
     justify-content: center;
@@ -148,3 +151,38 @@ dialog ul div li{
     margin-left: 10px;
 }
 
+#modal_experiencia{
+    background-color: white;
+    border: 2px solid ;
+    padding: 20px;
+    border-radius: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 60vh;
+    width: 60vw;
+    
+}
+
+#modal_experiencia .cont_experiencia{
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid;
+    margin-top: 5px;
+}
+
+#modal_experiencia .info_basica{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#modal_experiencia .info_completa{
+    display: flex;
+    flex: 1;
+    min-width: 50%;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 20px;
+}
