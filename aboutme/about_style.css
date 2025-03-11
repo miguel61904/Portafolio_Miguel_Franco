@@ -2,7 +2,7 @@
     font-family: bit;
     src: url(../assets/fonts/8-BIT.TTF);
 }
-
+/*estilos generales*/
 *{
     margin: 0;
     padding: 0;
@@ -24,7 +24,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
 }
-
+/*Aside y conetenedor de la pagina*/
 .all_container{
     height: 80%;
     width: 100%;
@@ -53,7 +53,7 @@ aside{
 aside ul li{
     margin-bottom: 30px;
 }
-
+/* contenedor de imagen */
 #contImg{
     height: auto;
     width: 100%;
@@ -73,7 +73,7 @@ aside ul li{
 #contenedor_Img img{
     height: 100%;
 }
-
+/*contenedor de Texto*/
 #cont_text{
     height: 20%;
     width: 100%;
@@ -120,14 +120,20 @@ aside ul li{
     border-radius: 5px;
     border-color: white;
 }
-
+/*contenedor de volver*/
 #volver{
     width: auto;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
+    height: 50px;
 }
 
+#volver p img{
+    max-width: 50px;
+    max-height: 50px;
+}
+/*Modales*/
 #modal_contacto {
     background-color: rgba(255, 255, 255, 0.5);
     border: 2px solid white;
@@ -185,4 +191,108 @@ dialog ul div li{
     align-items: center;
     flex-wrap: wrap;
     margin-left: 20px;
+}
+
+.nube{
+    display: none;
+}
+/* diseno movile*/
+@media (max-width: 600px) { 
+    *{
+        font-size: 10px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow: hidden;
+    }
+    .nube{
+        display: inline;
+    }
+
+    aside{
+        display: none;
+    }
+
+    #volve{ 
+        width: 5%;
+    }
+
+    #volver p img{ 
+        width: 30px;
+        height: 30px;
+    }
+    .nube button{
+        background-color: transparent;
+        border: none;
+        max-width: 100px;
+        max-height: 100px;
+    }
+    #contImg{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100vw;
+    }
+    .nube{
+        position: absolute; /* Se posiciona sobre la imagen */
+        top: 0; /* La pone en la parte superior */
+        left: 50%; /* Centra horizontalmente */
+        transform: translateX(-50%); /* Corrige la alineación */
+        z-index: 2; /* La coloca sobre la imagen */
+    }
+    #contendor_Img{
+        position: relative; /* Contenedor relativo para que los elementos absolutos se ubiquen dentro */
+        height: 60vh;
+        width: 60vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #contenedor_Img img {
+        height: 100%;
+        width: auto;
+        position: relative; /* Mantiene la imagen en su lugar */
+        z-index: 1; /* Asegura que la imagen de fondo esté detrás */
+    }
+
+    #img{
+        min-height: 319px;
+        min-width: 380px;
+    }
+
+    #modal_responsive{
+        background-color: rgba(255, 255, 255, .5);
+        border-radius: 5px;
+        border-color: white;
+        margin: 5px;
+        width: 30%;
+    }
+
+    #modal_responsive ul li{
+        margin-top: 10px;
+    }
+
+    #modal_responsive ul li button{
+        background-color: transparent;
+        border: none;
+    }
+    
+    .nube button :active{
+        animation-duration: 3s;
+        animation-name: nube;
+    }
+
+    @keyframes nube {
+        from {
+            margin-top: 10px;
+            width: 300%;
+          }
+        
+          to {
+            margin-top: 0px;
+            width: 100%;
+          }
+    }
+
 }

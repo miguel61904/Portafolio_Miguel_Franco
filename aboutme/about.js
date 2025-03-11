@@ -40,7 +40,7 @@ function escribirHabilidad(){
     }
 }
 
-perfil.addEventListener("click", ()=>{
+perfil.addEventListener("click", function perfil(){
     
     /// personaje habla
     let imagenes = ["../assets/img/Midibujo.png","../assets/img/hablando.png"]
@@ -106,4 +106,74 @@ btnCerrar.addEventListener("click", () =>{
 
 cerrraEx.addEventListener("click", () =>{
     modalExperiencia.close();
+})
+
+// Ventana modal /////////////////////////////////////////////////////
+
+let perfilR = document.getElementById("perfilR")
+let proyectosR = document.getElementById("proyectosR")
+let experienciaR = document.getElementById("experienciaR")
+let habilidadesR = document.getElementById("habilidadesR")
+let contactoR = document.getElementById("contactoR")
+let imagenR = document.getElementById("img")
+
+let nube = document.getElementById("nube");
+let modal_about = document.getElementById("modal_responsive")
+
+nube.addEventListener("click", () =>{
+    modal_about.showModal();
+})
+
+perfilR.addEventListener("click", ()=>{
+    let imagenes = ["../assets/img/Midibujo.png","../assets/img/hablando.png"]
+    let index = 0
+    const intevalo = setInterval(() => {
+        index = 1 - index;
+        imagen.src = imagenes[index]
+    },200)
+    setTimeout(() =>{
+        clearInterval(intevalo)
+    },10000)
+    /// texto inferior
+    if(isActive == false){
+        escribirTexto();
+        isActive = true
+    }else{ 
+        contText.style.display = "none"
+        escribirTexto();
+        isActive = false
+    }
+})
+
+proyectosR.addEventListener("click", ()=>{
+    alert("proyectos Works")
+})
+
+habilidadesR.addEventListener("click", ()=>{
+    let imagenes = ["../assets/img/Midibujo.png","../assets/img/hablando.png"]
+    let index = 0
+    const intevalo = setInterval(() => {
+        index = 1 - index;
+        imagen.src = imagenes[index]
+    },200)
+    setTimeout(() =>{
+        clearInterval(intevalo)
+    },2000)
+    if(isActive == false){
+        indexText = 0
+        escribirHabilidad();
+    }else{
+        indexText = 0
+        contText.style.display = "none"
+        escribirHabilidad();
+    }
+    
+})
+
+experienciaR.addEventListener("click", ()=>{
+    modalExperiencia.showModal();
+})
+
+contactoR.addEventListener("click", ()=>{
+    modal.showModal();
 })
