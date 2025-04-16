@@ -1,5 +1,5 @@
 let button = document.getElementById("boton");
 
 button.addEventListener("click", ()=>{
-    window.location.href= './aboutme/about_index.html'
+    window.location.href= './aboutme copy/about_index.html'
 })

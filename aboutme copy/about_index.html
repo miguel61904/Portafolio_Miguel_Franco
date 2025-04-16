@@ -21,7 +21,7 @@
         </div>
         <div id="player">
             <button id="flecha"><img src="../assets/img/nube_text.png" alt="" style="max-width: 120px; max-height: 120px;"></button>
-            <img src="../assets/img/Pj pequeno.png" alt="" style="max-width: 200px; max-height: 200px;">
+            <img id="imgPeque" src="../assets/img/Pj pequeno.png" alt="" style="max-width: 200px; max-height: 200px;">
         </div>
         <div id="player_talk">
             <img id="img" src="../assets/img/Midibujo.png" alt="">
@@ -43,6 +43,60 @@
                 <p id="text_contacto"></p>
             </div>
         </div>
+        <dialog id="modal_contacto">
+            <button id="btn_cerrar">X</button>
+            <ul>
+                <div>
+                <img src="/assets/fonts/github_logo.png" alt="" style="height: 50px; width: 50px;"><a href="https://github.com/"><li>GitHub</li></a>
+                </div>
+                <div>
+                    <img src="/assets/fonts/Linketing_logo.png" alt="" style="height: 50px; width: 50px;"><a href="https://www.linkedin.com/in/miguelfranco19/"><li>LinkedIn</li></a>
+                </div>
+                <div>
+                    <img src="/assets/fonts/whatsapp_logo.png" alt="" style="height: 50px; width: 50px;"><a href="https://wa.me/573154741259?text=Hola%20Miguel%20estoy%20interesado%20en%20tus%20servicios"><li>WhatsApp</li></a>
+                </div>
+            </ul>
+        </dialog>
+        <dialog id="modal_experiencia">
+            <button id="cerrar_ex">X</button>
+                <div class="cont_experiencia">
+                    <div class="info_basica">
+                        <p><b>Desarrollador de Sofware Junior</b></p>
+                        <p><b>Ago 2024 / Feb 2025</b></p>
+                        <p><b>Tata Consultancy Service</b></p>
+                    </div>
+                    <div class="info_completa">
+                        <p>Automatización de sistema de gestión de talentos con 
+                            desarrollo de software, Angular, Spring Boot y SQL. Realice 
+                            la parte funcional y de diseño con Angular y TypeScript. </p>
+                    </div>
+                </div>
+                <div class="cont_experiencia">
+                    <div class="info_basica">
+                        <p><b>Soporte Tecnico Nivel 1</b></p>
+                        <p><b>May 2023 / Jun 2024</b></p>
+                        <p><b>Indra Minsait S.A</b></p>
+                    </div>
+                    <div class="info_completa">
+                        <p>Brindar soporte técnico de herramientas: office 365, SAP, 
+                            Directorio activo, instalación de sistemas operativos de 
+                            Windows, reparación de equipos de computo, 
+                            mantenimiento preventivo y correctivo.</p>
+                    </div>
+                </div>
+                <div class="cont_experiencia">
+                    <div class="info_basica">
+                        <p><b>Aprendiz de desarrollo de software</b></p>
+                        <p><b>Sep 2023 / Feb 2023</b></p>
+                        <p><b>Algar Tech S.A</b></p>
+                    </div>
+                    <div class="info_completa">
+                        <p >Aprender y apoyar al equipo de trabajo con las diferentes 
+                            tareas de desarrollo con los diferentes lenguajes de 
+                            programación: Angular, HTML, CSS, .NET, PLSQL.</p>
+                    </div>
+                </div>
+        </dialog>
     </div>
     <script src="./about.js"></script>
     <script src="responsive.js"></script>
