@@ -142,8 +142,32 @@ btnCerrar.addEventListener("click", () =>{
 cerrraEx.addEventListener("click", () =>{
     modalExperiencia.close();
 })
+ // funciuones para caminar
+caminar();
+function caminar(){
+    
+        const number = 1 + Math.floor(Math.random() * 4);
+        console.log(number)
+        switch(number){
+            case 1:
+                moveDerecha();
+                break;
+            case 2:
+                moveIzquierda();
+                break;
+            case 3:
+                moveAbajo();
+                break;
+            case 4:
+                moveArriba();
+                break;
+        }
+    
+}
 
-window.addEventListener("load", () =>{ 
+
+
+function moveDerecha(){
     playerPeque.style.display = "flex";
     let imagenes = ["../assets/img/Pj pequeno.png","../assets/img/move.png"]
     let index = 0;
@@ -160,7 +184,75 @@ window.addEventListener("load", () =>{
     setTimeout(() =>{
         if(positionX >= maxPosition){
             clearInterval(intevalo)
+            caminar();
         }
     },10000)
+    
+}
 
-})
+function moveIzquierda(){
+    playerPeque.style.display = "flex";
+    let imagenes = ["../assets/img/Pj pequenoL.png","../assets/img/moveL.png"]
+    let index = 0;
+    let positionX = 0;
+    let positionY = 0;
+    let maxPosition = 100;
+    const intevalo = setInterval(() => {
+        index = 1 - index;
+        imagenPeque.src = imagenes[index]
+        positionX -=5;
+        positionY +=0;
+         playerPeque.style.left = `${positionX}px`;
+    },200)
+    setTimeout(() =>{
+        if(positionX <= maxPosition){
+            clearInterval(intevalo)
+            caminar();
+        }
+    },10000)
+    
+}
+
+function moveArriba(){
+    playerPeque.style.display = "flex";
+    let imagenes = ["../assets/img/Pj pequeno.png","../assets/img/move.png"]
+    let index = 0;
+    let positionX = 0;
+    let positionY = 0;
+    let maxPosition = 100;
+    const intevalo = setInterval(() => {
+        index = 1 - index;
+        imagenPeque.src = imagenes[index]
+        positionX +=0;
+        positionY +=5;
+         playerPeque.style.top = `${positionY}px`;
+    },200)
+    setTimeout(() =>{
+        if(positionY >= maxPosition){
+            clearInterval(intevalo)
+            caminar();
+        }
+    },10000)
+}
+
+function moveAbajo(){
+    playerPeque.style.display = "flex";
+    let imagenes = ["../assets/img/Pj pequenoL.png","../assets/img/moveL.png"]
+    let index = 0;
+    let positionX = 0;
+    let positionY = 0;
+    let maxPosition = 100;
+    const intevalo = setInterval(() => {
+        index = 1 - index;
+        imagenPeque.src = imagenes[index]
+        positionX +=0;
+        positionY -=5;
+         playerPeque.style.top = `${positionY}px`;
+    },200)
+    setTimeout(() =>{
+        if(positionY <= maxPosition){
+            clearInterval(intevalo)
+            caminar();
+        }
+    },10000)
+}
