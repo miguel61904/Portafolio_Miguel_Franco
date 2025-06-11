@@ -20,7 +20,7 @@ html{
 body{
     height: 100vh; 
     width: 100vw;
-    background-image: url("/assets/img/habitacion.webp");
+    background-image: url("/assets/img/fondo room.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -207,4 +207,59 @@ dialog ul div li{
     align-items: center;
     flex-wrap: wrap;
     margin-left: 20px;
+}
+
+#modal_proyects{
+    background-color: white;
+    border: 2px solid ;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 60vh;
+    width: 60vw;
+    display: flex;
+    
+}
+
+#modal_proyects .proyecto{
+    height: 60dvh;
+    width: 20dvw;
+    text-align: center;
+    margin: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.img_proyect{
+    width: 100%; 
+    height: 50dvh;
+    background-image: url("../assets/proyects/proyecto1.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.img_proyect2{
+    width: 100%; 
+    height: 50dvh;
+    background-image: url("../assets/proyects/Innobell.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.img_proyect3{
+    width: 100%; 
+    height: 50dvh;
+    background-image: url("../assets/proyects/SGD.png");
+    background-position: center;
+    background-size: cover;
+}
+
+#modal_proyects .proyecto p{
+    text-align: justify;
+    font-size: 10px;
 }

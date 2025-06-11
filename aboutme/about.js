@@ -40,73 +40,6 @@ function escribirHabilidad(){
     }
 }
 
-perfil.addEventListener("click", function perfil(){
-    
-    /// personaje habla
-    let imagenes = ["../assets/img/Midibujo.png","../assets/img/hablando.png"]
-    let index = 0
-    const intevalo = setInterval(() => {
-        index = 1 - index;
-        imagen.src = imagenes[index]
-    },200)
-    setTimeout(() =>{
-        clearInterval(intevalo)
-    },10000)
-    /// texto inferior
-    if(isActive == false){
-        escribirTexto();
-        isActive = true
-    }else{ 
-        contText.style.display = "none"
-        escribirTexto();
-        isActive = false
-    }
-})
-
-proyectos.addEventListener("click", ()=>{
-    alert("proyectos Works")
-})
-
-habilidades.addEventListener("click", ()=>{
-    let imagenes = ["../assets/img/Midibujo.png","../assets/img/hablando.png"]
-    let index = 0
-    const intevalo = setInterval(() => {
-        index = 1 - index;
-        imagen.src = imagenes[index]
-    },200)
-    setTimeout(() =>{
-        clearInterval(intevalo)
-    },2000)
-    if(isActive == false){
-        indexText = 0
-        escribirHabilidad();
-    }else{
-        indexText = 0
-        contText.style.display = "none"
-        escribirHabilidad();
-    }
-    
-})
-
-experiencia.addEventListener("click", ()=>{
-    modalExperiencia.showModal();
-})
-
-contacto.addEventListener("click", ()=>{
-    modal.showModal();
-})
-
-btnVolver.addEventListener("click", () =>{
-    window.location.href = "../menu/menu.html"
-})
-
-btnCerrar.addEventListener("click", () =>{
-    modal.close();
-})
-
-cerrraEx.addEventListener("click", () =>{
-    modalExperiencia.close();
-})
 
 // Ventana modal /////////////////////////////////////////////////////
 
@@ -122,6 +55,7 @@ let modal_about = document.getElementById("modal_responsive")
 
 nube.addEventListener("click", () =>{
     modal_about.showModal();
+    alert("buenas noches")
 })
 
 perfilR.addEventListener("click", ()=>{

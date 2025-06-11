@@ -19,7 +19,7 @@ html{
 body{
     height: 100vh; 
     width: 100vw;
-    background-image: url("/assets/img/habitacion.webp");
+    background-image: url("/assets/img/fondo\ room.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -29,29 +29,6 @@ body{
     height: 80%;
     width: 100%;
     display: flex;
-}
-
-#contenerod_aside{
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
-aside{
-    float: left;
-    margin-left: 10px;
-    background-color: rgba(255, 255, 255, .5);
-    display: flex;
-    align-items: center;
-    text-align: center;
-    border-radius: 5px;
-    border: solid 2px;
-    border-color: white;
-    height: 50vh;
-}
-
-aside ul li{
-    margin-bottom: 30px;
 }
 /* contenedor de imagen */
 #contImg{
@@ -65,9 +42,11 @@ aside ul li{
 
 #contenedor_Img{
     height: 60vh;
-    width: 60vw;
+    width: 100vw;
     display: flex;
     justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 #contenedor_Img img{
