@@ -218,10 +218,11 @@ dialog ul div li{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 60vh;
+    height: 65vh;
     width: 60vw;
     display: flex;
-    
+    justify-content: center;
+    align-items: center;
 }
 
 #modal_proyects .proyecto{
@@ -232,6 +233,11 @@ dialog ul div li{
     border: 1px solid;
     border-radius: 5px;
     cursor: pointer;
+    transition: transform 0.3 ease;
+}
+
+.proyecto:hover{
+    transform: scale(1.1);
 }
 
 
@@ -260,6 +266,8 @@ dialog ul div li{
 }
 
 #modal_proyects .proyecto p{
-    text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: start;
     font-size: 10px;
 }
