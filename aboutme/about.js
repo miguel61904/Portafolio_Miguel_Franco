@@ -55,7 +55,7 @@ let modal_about = document.getElementById("modal_responsive")
 
 nube.addEventListener("click", () =>{
     modal_about.showModal();
-    alert("buenas noches")
+  
 })
 
 perfilR.addEventListener("click", ()=>{

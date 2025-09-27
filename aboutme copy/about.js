@@ -26,6 +26,7 @@ const textoHabilidad = "Cuenta con conocimientos en las tecnologias HTML5, CSS3,
 let indexText = 0
 let velocidad = 25;
 let isActive = false;
+let cancelWalk = true;
 
 function TextoInicial(){
     if (indexText < textInicial.length) {
@@ -87,6 +88,7 @@ flecha.addEventListener("click", ()=>{
         TextoInicial();
         isActive = false
     }
+    cancelWalk = false 
 })
 
 perfil.addEventListener("click", function perfil(){
@@ -153,6 +155,9 @@ caminar();
 function caminar(){
     
         const number = 1 + Math.floor(Math.random() * 5);
+        if (cancelWalk == false){
+            number = 6;
+        }
         console.log(number)
         switch(number){
             case 1:
@@ -169,6 +174,9 @@ function caminar(){
                 break;
             case 5:
                 quieto();
+                break;
+            case 6:
+                
                 break;
         }
     
@@ -270,6 +278,10 @@ function quieto(){
         clearInterval(intevalo)
         caminar()
     },700)
+}
+
+function quieto2(){
+
 }
 
 // Descargar CV
