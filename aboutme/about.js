@@ -55,7 +55,7 @@ let modal_about = document.getElementById("modal_responsive")
 
 nube.addEventListener("click", () =>{
     modal_about.showModal();
-  
+    nube.style.display = "none";
 })
 
 perfilR.addEventListener("click", ()=>{

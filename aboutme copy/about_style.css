@@ -244,25 +244,37 @@ dialog ul div li{
 .img_proyect{
     width: 100%; 
     height: 50dvh;
-    background-image: url("../assets/proyects/proyecto1.png");
+    background-image: url("../assets/proyects/GigaD.jpg");
     background-position: center;
     background-size: cover;
+}
+
+.img_proyect:hover{
+    background-image: url("../assets/proyects/proyecto1.png");
 }
 
 .img_proyect2{
     width: 100%; 
     height: 50dvh;
-    background-image: url("../assets/proyects/Innobell.jpg");
+    background-image: url("../assets/proyects/Innobell1.png");
     background-position: center;
     background-size: cover;
+}
+
+.img_proyect2:hover{
+    background-image: url("../assets/proyects/Innobell.jpg");
 }
 
 .img_proyect3{
     width: 100%; 
     height: 50dvh;
-    background-image: url("../assets/proyects/SGD.png");
+    background-image: url("../assets/proyects/SGD1.png");
     background-position: center;
     background-size: cover;
+}
+
+.img_proyect3:hover{
+    background-image: url("../assets/proyects/SGD.png");
 }
 
 #modal_proyects .proyecto p{
