@@ -184,6 +184,7 @@ dialog ul div li{
     transform: translate(-50%, -50%);
     height: 60vh;
     width: 60vw;
+    overflow:scroll;
     
 }
 
@@ -282,4 +283,9 @@ dialog ul div li{
     margin-right: 10px;
     text-align: start;
     font-size: 10px;
+}
+
+#cerrar_pro{
+    cursor: pointer;
+    
 }

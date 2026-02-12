@@ -175,6 +175,65 @@ dialog ul div li{
 .nube{
     display: none;
 }
+
+   /*Proyectos en nivel*/
+#modal_pro{
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lavel1 {
+  width: 50px;
+  height: 50px;
+  background: #4caf50;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+#select1 {
+  position: absolute;
+  background-color: aqua;
+  width: 50%;
+  height: 50px;
+}
+
+#lavel2 {
+  width: 50px;
+  height: 50px;
+  background: #4caf50;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#select2 {
+  position: absolute;
+  background-color: aqua;
+  width: 50%;
+  height: 50px;
+  display: none;
+}
+
+#lavel3 {
+  width: 50px;
+  height: 50px;
+  background: #4caf50;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* diseno movile*/
 @media (max-width: 600px) { 
     *{

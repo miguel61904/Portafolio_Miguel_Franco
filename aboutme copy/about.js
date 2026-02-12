@@ -6,6 +6,7 @@ let contacto = document.getElementById("contacto")
 // botones
 let btnCerrar = document.getElementById("btn_cerrar")
 let cerrraEx = document.getElementById("cerrar_ex")
+let cerrarPro = document.getElementById("cerrar_pro")
 // contenido animado
 let flecha = document.getElementById("flecha");
 let playerTalk = document.getElementById("player_talk");
@@ -299,6 +300,10 @@ let p3 = document.getElementById("proyecto3");
 proyectos.addEventListener( "click", ()=>{
     modalProyect.style.display = "flex";
     modalProyect.showModal();
+})
+
+cerrarPro.addEventListener("click", ()=>{
+    modalProyect.close();
 })
 
 p1.addEventListener("click", ()=>{

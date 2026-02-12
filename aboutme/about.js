@@ -7,10 +7,11 @@ let imagen = document.getElementById("img")
 // btn entorno 
 let btnVolver = document.getElementById("volver")
 let btnCerrar = document.getElementById("btn_cerrar")
-let cerrraEx = document.getElementById("cerrar_ex")
+let cerrarEx = document.getElementById("cerrar_ex")
 // modales
 let modal = document.getElementById("modal_contacto");
 let modalExperiencia = document.getElementById("modal_experiencia")
+let modalPro = document.getElementById("modal_pro");
 /// espacios de texto
 let contText = document.getElementById("espacio_text_perfil")
 let text_habilidades = document.getElementById("espacio_text_habilidades")
@@ -19,6 +20,11 @@ const textoHabilidad = "Cuenta con conocimientos en las tecnologias HTML5, CSS3,
 let indexText = 0
 let velocidad = 25;
 let isActive = false;
+// elementos proyectos
+let select1 = document.getElementById("select1");
+let select2 = document.getElementById("select2");
+let level2 = document.getElementById("lavel2");
+let level1 = document.getElementById("lavel1");
 
 function escribirTexto(){
     text_habilidades.style.display = "none"
@@ -79,9 +85,6 @@ perfilR.addEventListener("click", ()=>{
     }
 })
 
-proyectosR.addEventListener("click", ()=>{
-    alert("proyectos Works")
-})
 
 habilidadesR.addEventListener("click", ()=>{
     let imagenes = ["../assets/img/Midibujo.png","../assets/img/hablando.png"]
@@ -108,6 +111,28 @@ experienciaR.addEventListener("click", ()=>{
     modalExperiencia.showModal();
 })
 
+cerrarEx.addEventListener("click", ()=>{
+    modalExperiencia.close();
+})
+
+proyectosR.addEventListener("click", ()=>{
+    modalPro.showModal();
+})
+// movimientos proyecto
+level2.addEventListener("click", () => {
+  select1.style.display = "none";
+  select2.style.display = "flex";
+});
+
+level1.addEventListener("click", () => {
+  select1.style.display = "flex";
+  select2.style.display = "none";
+});
+
 contactoR.addEventListener("click", ()=>{
     modal.showModal();
 })
+
+
+
+
