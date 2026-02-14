@@ -8,6 +8,7 @@ let imagen = document.getElementById("img")
 let btnVolver = document.getElementById("volver")
 let btnCerrar = document.getElementById("btn_cerrar")
 let cerrarEx = document.getElementById("cerrar_ex")
+let cerrarPro = document.getElementById("Cancelar");
 // modales
 let modal = document.getElementById("modal_contacto");
 let modalExperiencia = document.getElementById("modal_experiencia")
@@ -25,6 +26,10 @@ let select1 = document.getElementById("select1");
 let select2 = document.getElementById("select2");
 let level2 = document.getElementById("lavel2");
 let level1 = document.getElementById("lavel1");
+let level3 = document.getElementById("lavel3");
+let select3 = document.getElementById("select3");
+let venPro = document.getElementById("venPro");
+
 
 function escribirTexto(){
     text_habilidades.style.display = "none"
@@ -117,17 +122,31 @@ cerrarEx.addEventListener("click", ()=>{
 
 proyectosR.addEventListener("click", ()=>{
     modalPro.showModal();
+    venPro.style.display = "inline";
 })
 // movimientos proyecto
 level2.addEventListener("click", () => {
   select1.style.display = "none";
   select2.style.display = "flex";
+  select3.style.display = "none";
 });
 
 level1.addEventListener("click", () => {
   select1.style.display = "flex";
   select2.style.display = "none";
+  select3.style.display = "none";
 });
+
+level3.addEventListener("click", ()=>{
+  select3.style.display = "flex";
+  select1.style.display = "none";
+  select2.style.display = "none";
+})
+
+cerrarPro.addEventListener("click", ()=>{
+    modalPro.close();
+    venPro.style.display = "none"
+})
 
 contactoR.addEventListener("click", ()=>{
     modal.showModal();

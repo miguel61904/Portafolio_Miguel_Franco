@@ -185,6 +185,10 @@ dialog ul div li{
     align-items: center;
 }
 
+#modal_pro div{
+    border-radius: 5px;
+}
+
 #lavel1 {
   width: 50px;
   height: 50px;
@@ -200,9 +204,10 @@ dialog ul div li{
 
 #select1 {
   position: absolute;
-  background-color: aqua;
-  width: 50%;
+  background-image: url(../assets/proyects/Innobell1.png);
+  width: 70%;
   height: 50px;
+  display: none;
 }
 
 #lavel2 {
@@ -218,8 +223,9 @@ dialog ul div li{
 
 #select2 {
   position: absolute;
-  background-color: aqua;
-  width: 50%;
+  background-image: url("../assets/proyects/GigaD.jpg");
+  background-position: center;
+  width: 70%;
   height: 50px;
   display: none;
 }
@@ -232,6 +238,21 @@ dialog ul div li{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#select3 {
+  position: absolute;
+  background-image: url("../assets/proyects/SGD1.png");
+  background-position: center;
+  width: 70%;
+  height: 50px;
+  display: none;
+}
+
+#modal_pro div button{
+    margin-top: 10px;
+    position: relative;
+    left: 40%;
 }
 
 /* diseno movile*/
