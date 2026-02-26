@@ -9,6 +9,7 @@ let btnVolver = document.getElementById("volver")
 let btnCerrar = document.getElementById("btn_cerrar")
 let cerrarEx = document.getElementById("cerrar_ex")
 let cerrarPro = document.getElementById("Cancelar");
+let aceptPro = document.getElementById("Aceptar")
 // modales
 let modal = document.getElementById("modal_contacto");
 let modalExperiencia = document.getElementById("modal_experiencia")
@@ -21,6 +22,9 @@ const textoHabilidad = "Cuenta con conocimientos en las tecnologias HTML5, CSS3,
 let indexText = 0
 let velocidad = 25;
 let isActive = false;
+let textP1 = document.getElementById("textP1");
+let textP2 = document.getElementById("textP2");
+let textP3 = document.getElementById("textP3");
 // elementos proyectos
 let select1 = document.getElementById("select1");
 let select2 = document.getElementById("select2");
@@ -129,21 +133,35 @@ level2.addEventListener("click", () => {
   select1.style.display = "none";
   select2.style.display = "flex";
   select3.style.display = "none";
+  textP2.style.display = "inline";
+  textP1.style.display = "none";
+  textP3.style.display = "none";
 });
 
 level1.addEventListener("click", () => {
   select1.style.display = "flex";
   select2.style.display = "none";
   select3.style.display = "none";
+  textP1.style.display = "inline";
+  textP2.style.display = "none";
+  textP3.style.display = "none";
 });
 
 level3.addEventListener("click", ()=>{
   select3.style.display = "flex";
   select1.style.display = "none";
   select2.style.display = "none";
+  textP3.style.display = "inline";
+  textP2.style.display = "none";
+  textP1.style.display = "none";
 })
 
 cerrarPro.addEventListener("click", ()=>{
+    modalPro.close();
+    venPro.style.display = "none"
+})
+
+aceptPro.addEventListener("click", ()=>{
     modalPro.close();
     venPro.style.display = "none"
 })
