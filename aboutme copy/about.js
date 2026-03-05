@@ -16,14 +16,14 @@ let contInfo = document.getElementById("contenedor_info");
 let playerPeque = document.getElementById("player");
 // modales
 let modal = document.getElementById("modal_contacto");
-let modalExperiencia = document.getElementById("modal_experiencia")
+let modalExperiencia = document.getElementById("modal_experiencia");
+let modalHabi = document.getElementById("modal_habi");
 /// espacios de texto
 let contText = document.getElementById("espacio_text_perfil");
 let text_inicial = document.getElementById("espacio_text_inicial");
 let text_habilidades = document.getElementById("espacio_text_habilidades");
 let textInicial = "Hola Soy Miguel Franco, Desarrollador de software Front-End. Que te gustaría conocer sobre mi?";
 const textoPerfil = "Tecnólogo en desarrollo de software y aplicaciones móviles, cuenta conconocimientos y experiencia certificada en áreas de soporte técnico brindando manteamiento correctivo y preventivo, programación y desarrollo de aplicaciones web, manejo de herramientas ofimáticas, reparación y mantenimiento ";
-const textoHabilidad = "Cuenta con conocimientos en las tecnologias HTML5, CSS3, JavaScript, Angular... ";
 let indexText = 0
 let velocidad = 25;
 let isActive = false;
@@ -48,20 +48,6 @@ function escribirTexto(){
         document.getElementById("text_perfil").textContent += textoPerfil.charAt(indexText);
         indexText++;
         setTimeout(escribirTexto, velocidad);
-    }
-    else{
-        indexText = 0
-    }
-}
-
-function escribirHabilidad(){
-    contText.style.display = "none"
-    text_inicial.style.display = "none"
-    if (indexText < textoHabilidad.length) {
-        text_habilidades.style.display = "inline"
-        document.getElementById("text_habilidades").textContent += textoHabilidad.charAt(indexText);
-        indexText++;
-        setTimeout(escribirHabilidad, velocidad);
     }
     else{
         indexText = 0
@@ -120,24 +106,7 @@ experiencia.addEventListener("click", ()=>{
 })
 
 habilidades.addEventListener("click", ()=>{
-    let imagenes = ["../assets/img/Midibujo.png","../assets/img/hablando.png"]
-    let index = 0
-    const intevalo = setInterval(() => {
-        index = 1 - index;
-        imagen.src = imagenes[index]
-    },200)
-    setTimeout(() =>{
-        clearInterval(intevalo)
-    },2000)
-    if(isActive == false){
-        indexText = 0
-        escribirHabilidad();
-    }else{
-        indexText = 0
-        contText.style.display = "none"
-        escribirHabilidad();
-    }
-    
+    modalHabi.showModal();
 })
 
 contacto.addEventListener("click", ()=>{
