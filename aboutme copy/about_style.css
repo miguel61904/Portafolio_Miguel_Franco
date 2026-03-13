@@ -2,6 +2,9 @@
     font-family: bit;
     src: url(../assets/fonts/8-BIT.TTF);
 }
+button{
+    cursor: pointer;
+}
 /*estilos generales*/
 *{
     margin: 0;
@@ -146,6 +149,17 @@ aside{
 
 aside ul li{
     margin-top: 5px;
+    cursor: pointer;
+}
+
+span{
+    display: none;
+}
+
+li:hover{
+    span{
+        display: inline;
+    }
 }
 
 /* modales*/
@@ -314,7 +328,7 @@ dialog ul div li{
     height: 85%;
 }
 
-#habilidades{
+#p_Habilidades{
     background-color: rgba(63, 132, 232, 0.7);
      height: 80%;
      width: 20%;
@@ -324,7 +338,7 @@ dialog ul div li{
      border-bottom-right-radius: 10px;
 }
 
-#habilidades p{
+#p_Habilidades p{
     margin-left: 20px;
 }
 

@@ -11,11 +11,11 @@
         <div id="contenedor_info">
             <aside>
                 <ul>
-                    <li id="perfil">Perfil profecional</li>
-                    <li id="experiencia">Experiencia</li>
-                    <li id="proyectos">Proyectos</li>
-                    <li id="habilidades">Habilidades</li>
-                    <li id="contacto">Contacto</li>
+                    <li id="perfil"><span>> </span>Perfil profecional</li>
+                    <li id="experiencia"><span>> </span>Experiencia</li>
+                    <li id="proyectos"><span>> </span>Proyectos</li>
+                    <li id="habilidades"><span>> </span>Habilidades</li>
+                    <li id="contacto"><span>> </span>Contacto</li>
                     <li><button onclick="descargarCV()">Descargar CV</button></li>
                 </ul>
             </aside>
@@ -34,21 +34,12 @@
             <div id="espacio_text_perfil">
                 <p id="text_perfil"></p>
             </div>
-            <div id="espacio_text_proyectos">
-                <p id="text_proyectos"></p>
-            </div>
-            <div id="espacio_text_habilidades">
-                <p id="text_habilidades"></p>
-            </div>
-            <div id="espacio_text_contacto">
-                <p id="text_contacto"></p>
-            </div>
         </div>
         <dialog id="modal_contacto">
             <button id="btn_cerrar">X</button>
-            <ul>
+            <ul style="display: flex; flex-direction: column;">
                 <div>
-                <img src="/assets/fonts/github_logo.png" alt="" style="height: 50px; width: 50px;"><a href="https://github.com/"><li>GitHub</li></a>
+                <img src="/assets/fonts/github_logo.png" alt="" style="height: 50px; width: 50px;"><a href="https://github.com/"><li>GitHub..</li></a>
                 </div>
                 <div>
                     <img src="/assets/fonts/Linketing_logo.png" alt="" style="height: 50px; width: 50px;"><a href="https://www.linkedin.com/in/miguelfranco19/"><li>LinkedIn</li></a>
@@ -140,11 +131,13 @@
             <div id="cuerpo">
                 <img src="/assets/img/Perfil.png" alt="">
                 <br>
-                <b style="margin-left: 10px;">HP 100 / 100</b>
+                <b style="margin-left: 10px; margin-bottom: 5px;">HP 100 / 100</b>
+                <img src="/assets/img/hp.png" alt="" style="height: 8%;">
                 <br> 
-                <b style="margin-left: 10px;">XP 100 / 100</b>
+                <b style="margin-left: 10px; margin-bottom: 5px;">XP 100 / 100</b>
+                <img src="/assets/img/xp.png" alt="" style="height: 8%;">
             </div>
-            <div id="habilidades">
+            <div id="p_Habilidades">
                 <br>
                 <h3 style="text-align: center;">Habilidades</h3>
                 <br>
@@ -167,8 +160,7 @@
                 <p>▮ ▮ ▮ ▮ ▮</p>
                 <br>
                 <div id="btn-habilidades">
-                    <button>Aceptar</button>
-                    <button>Cancelar</button>
+                    <button id="btn_salirHabi">Salir</button>
                 </div>
             </div>
         </div>

@@ -7,6 +7,7 @@ let contacto = document.getElementById("contacto")
 let btnCerrar = document.getElementById("btn_cerrar")
 let cerrraEx = document.getElementById("cerrar_ex")
 let cerrarPro = document.getElementById("cerrar_pro")
+let cerrarHabi = document.getElementById("btn_salirHabi");
 // contenido animado
 let flecha = document.getElementById("flecha");
 let playerTalk = document.getElementById("player_talk");
@@ -41,7 +42,7 @@ function TextoInicial(){
 }
 
 function escribirTexto(){ 
-    text_habilidades.style.display = "none"
+    
     text_inicial.style.display = "none"
     if (indexText < textoPerfil.length) {
         contText.style.display = "inline"
@@ -107,6 +108,10 @@ experiencia.addEventListener("click", ()=>{
 
 habilidades.addEventListener("click", ()=>{
     modalHabi.showModal();
+})
+
+cerrarHabi.addEventListener("click", ()=>{
+    modalHabi.close();
 })
 
 contacto.addEventListener("click", ()=>{

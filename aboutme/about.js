@@ -1,9 +1,4 @@
-let perfil = document.getElementById("perfil")
-let proyectos = document.getElementById("proyectos")
-let experiencia = document.getElementById("experiencia")
-let habilidades = document.getElementById("habilidades")
-let contacto = document.getElementById("contacto")
-let imagen = document.getElementById("img")
+let imagen = document.getElementById("img");
 // btn entorno 
 let btnVolver = document.getElementById("volver")
 let btnCerrar = document.getElementById("btn_cerrar")
@@ -36,7 +31,7 @@ let venPro = document.getElementById("venPro");
 
 
 function escribirTexto(){
-    text_habilidades.style.display = "none"
+    
     if (indexText < textoPerfil.length) {
         contText.style.display = "inline"
         document.getElementById("text_perfil").textContent += textoPerfil.charAt(indexText);
@@ -166,9 +161,7 @@ aceptPro.addEventListener("click", ()=>{
     venPro.style.display = "none"
 })
 
-contactoR.addEventListener("click", ()=>{
-    modal.showModal();
-})
+
 
 
 
