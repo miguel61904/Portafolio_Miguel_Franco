@@ -12,7 +12,7 @@ let modalPro = document.getElementById("modal_pro");
 /// espacios de texto
 let contText = document.getElementById("espacio_text_perfil")
 let text_habilidades = document.getElementById("espacio_text_habilidades")
-const textoPerfil = "Tecnico en desarrollo de software aplicaciones en la nube, proximo a graduarse en Tecnología en desarrollo de software y aplicaciones móviles, cuenta con conocimientos en diferentes lenguajes de programación vistos en las instituciones, respaldado con un año de experiencia en el área, manejo de herramientas ofimáticas y tiene buenas competencias para la maquetación. "
+const textoPerfil = "Tecnólogo en desarrollo de software y aplicaciones móviles, cuenta conconocimientos y experiencia certificada en áreas de soporte técnico brindando manteamiento correctivo y preventivo, programación y desarrollo de aplicaciones web, manejo de herramientas ofimáticas, reparación y mantenimiento."
 const textoHabilidad = "Cuenta con conocimientos en las tecnologias HTML5, CSS3, JavaScript, Angular... "
 let indexText = 0
 let velocidad = 25;
